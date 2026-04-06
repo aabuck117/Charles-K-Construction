@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles K Construction | Premium General Contractor</title>
+  <meta name="description" content="Charles K Construction is a premium construction contractor specializing in residential and commercial remodeling, renovations, and custom builds." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles.css" />
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#111111] text-white antialiased selection:bg-[#e65c00] selection:text-white">
+
+  <!-- Navigation -->
+  <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent py-6">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 bg-[#e65c00] flex items-center justify-center text-white font-bold text-xl tracking-tighter font-slab">
+            CK
+          </div>
+          <span class="font-bold text-xl tracking-tight uppercase font-slab">Charles K <span class="text-gray-400 font-medium font-sans">Construction</span></span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-sm font-bold font-condensed tracking-wide text-gray-300 hover:text-white transition-colors uppercase">Services</a>
+          <a href="#why-us" class="text-sm font-bold font-condensed tracking-wide text-gray-300 hover:text-white transition-colors uppercase">Why Us</a>
+          <a href="#process" class="text-sm font-bold font-condensed tracking-wide text-gray-300 hover:text-white transition-colors uppercase">Process</a>
+          <a href="#contact" class="text-sm font-bold font-condensed tracking-wide uppercase bg-[#e65c00] hover:bg-[#cc5200] text-white px-6 py-2.5 transition-colors">Get a Quote</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#111111] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col">
+    <div class="flex items-center justify-between p-6 border-b border-gray-800">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-[#e65c00] flex items-center justify-center text-white font-bold tracking-tighter font-slab">CK</div>
+        <span class="font-bold tracking-tight uppercase font-slab">Charles K</span>
+      </div>
+      <button id="mobile-menu-close" class="text-gray-400 hover:text-white p-2">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col p-6 gap-6 text-lg font-bold font-condensed tracking-wide uppercase">
+      <a href="#services" class="text-gray-300 hover:text-white">Services</a>
+      <a href="#why-us" class="text-gray-300 hover:text-white">Why Us</a>
+      <a href="#process" class="text-gray-300 hover:text-white">Process</a>
+      <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+      <a href="#contact" class="bg-[#e65c00] text-white text-center py-4 mt-4 font-bold">Get Your Free Quote</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop" alt="Modern construction project" class="w-full h-full object-cover opacity-40" />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+        <div class="max-w-3xl reveal">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#e65c00]"></span>
+            <span class="text-xs font-bold tracking-widest uppercase text-gray-300 font-condensed">Premium General Contracting</span>
+          </div>
+          <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] mb-6 text-balance font-slab">
+            Built with Precision. <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e65c00] to-[#ff8533]">Delivered with Pride.</span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+            Charles K Construction is your trusted partner for high-end residential and commercial projects. We turn complex blueprints into flawless reality, on time and on budget.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#e65c00] hover:bg-[#cc5200] transition-all group font-condensed tracking-wide uppercase">
+              Start Your Project
+              <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-gray-600 hover:border-white hover:bg-white/5 transition-all font-condensed tracking-wide uppercase">
+              Explore Our Services
+            </a>
+          </div>
+          
+          <div class="mt-16 flex items-center gap-8 border-t border-gray-800 pt-8">
+            <div>
+              <p class="text-4xl font-bold text-white font-condensed">15+</p>
+              <p class="text-sm text-gray-400 font-medium uppercase tracking-wider font-condensed mt-1">Years Experience</p>
+            </div>
+            <div class="w-px h-12 bg-gray-800"></div>
+            <div>
+              <p class="text-4xl font-bold text-white font-condensed">100%</p>
+              <p class="text-sm text-gray-400 font-medium uppercase tracking-wider font-condensed mt-1">Satisfaction Focus</p>
+            </div>
+            <div class="w-px h-12 bg-gray-800 hidden sm:block"></div>
+            <div class="hidden sm:block">
+              <p class="text-4xl font-bold text-white font-condensed">Licensed</p>
+              <p class="text-sm text-gray-400 font-medium uppercase tracking-wider font-condensed mt-1">& Fully Insured</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION -->
+    <section id="services" class="py-24 bg-[#111111] relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+          <div class="max-w-2xl">
+            <h2 class="text-[#e65c00] font-bold tracking-widest uppercase text-sm mb-3 font-condensed">Our Expertise</h2>
+            <h3 class="text-4xl md:text-5xl font-bold tracking-tight font-slab">Comprehensive Construction Solutions.</h3>
+          </div>
+          <p class="text-gray-400 mt-6 md:mt-0 max-w-md text-balance">
+            From structural framing to high-end interior finishing, we bring unparalleled craftsmanship to every phase of your project.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="home" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Remodeling & Renovations</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Breathe new life into your property. We handle full-scale gut renovations, kitchen and bath remodels, and layout reconfigurations that increase property value and livability.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal" style="transition-delay: 100ms;">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="hammer" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">General Construction</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Ground-up builds and structural additions. We manage the heavy lifting, ensuring structural integrity, code compliance, and rock-solid foundations for your new space.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal" style="transition-delay: 200ms;">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="paint-roller" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Interior Improvements</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Flawless drywall, custom trim, flooring, and painting. We obsess over the details so the final product looks polished, premium, and perfectly executed.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="trees" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Exterior Upgrades</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Enhance curb appeal and weather resistance. We install premium siding, roofing, windows, and custom decks designed to withstand the elements and look incredible.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal" style="transition-delay: 100ms;">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="blocks" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Concrete & Hardscaping</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Durable driveways, patios, foundations, and retaining walls. Our concrete work is poured with precision to prevent cracking and ensure decades of stability.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="bg-[#1a1a1a] border border-gray-800 p-8 hover:border-[#e65c00]/50 transition-colors group reveal" style="transition-delay: 200ms;">
+            <div class="w-12 h-12 bg-[#e65c00]/10 flex items-center justify-center mb-6 group-hover:bg-[#e65c00] transition-colors">
+              <i data-lucide="ruler" class="w-6 h-6 text-[#e65c00] group-hover:text-white transition-colors"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Custom Project Builds</h4>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Have a unique vision? From custom built-ins to specialized commercial fit-outs, we have the engineering know-how and craftsmanship to build exactly what you need.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WHY CHOOSE US SECTION -->
+    <section id="why-us" class="py-24 bg-[#161616] border-y border-gray-800">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <img src="https://images.unsplash.com/photo-1541888081622-15cb3a5cbce8?q=80&w=2940&auto=format&fit=crop" alt="Construction team working" class="w-full h-auto object-cover border border-gray-800 shadow-2xl" />
+            <div class="flex gap-4 mt-6">
+              <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2940&auto=format&fit=crop" alt="Detail work" class="w-1/2 h-48 object-cover border border-gray-800" />
+              <div class="w-1/2 bg-[#e65c00] p-8 flex flex-col justify-center">
+                <p class="text-5xl font-bold text-white mb-2 font-condensed">100%</p>
+                <p class="text-white/90 font-medium font-condensed uppercase tracking-wide">Commitment to Quality Craftsmanship</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reveal">
+            <h2 class="text-[#e65c00] font-bold tracking-widest uppercase text-sm mb-3 font-condensed">The Charles K Difference</h2>
+            <h3 class="text-4xl font-bold tracking-tight mb-6 font-slab">We don't cut corners. We build them perfectly.</h3>
+            <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+              Finding a reliable contractor shouldn't be the hardest part of your project. At Charles K Construction, we operate on a foundation of honesty, clear communication, and relentless attention to detail.
+            </p>
+            
+            <div class="space-y-8">
+              <div class="flex gap-4">
+                <div class="mt-1 flex-shrink-0">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2 font-slab">Uncompromising Workmanship</h4>
+                  <p class="text-gray-400">We treat every project as if it were our own property. Our crews are highly skilled, meticulously trained, and take immense pride in delivering flawless results.</p>
+                </div>
+              </div>
+              
+              <div class="flex gap-4">
+                <div class="mt-1 flex-shrink-0">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2 font-slab">Transparent Communication</h4>
+                  <p class="text-gray-400">No ghosting. No hidden fees. You get clear timelines, honest pricing, and regular updates so you always know exactly where your project stands.</p>
+                </div>
+              </div>
+              
+              <div class="flex gap-4">
+                <div class="mt-1 flex-shrink-0">
+                  <i data-lucide="check-circle-2" class="w-6 h-6 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2 font-slab">Clean & Respectful Execution</h4>
+                  <p class="text-gray-400">Construction is messy, but your site shouldn't be. We maintain clean, safe, and organized workspaces, minimizing disruption to your daily life or business operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROOF / CREDIBILITY SECTION -->
+    <section class="py-24 bg-[#111111]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+          <h2 class="text-[#e65c00] font-bold tracking-widest uppercase text-sm mb-3 font-condensed">Client Success</h2>
+          <h3 class="text-4xl font-bold tracking-tight font-slab">Our Reputation is Built on Results.</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-[#1a1a1a] p-8 border border-gray-800 relative reveal">
+            <i data-lucide="quote" class="w-10 h-10 text-gray-800 absolute top-6 right-6"></i>
+            <div class="flex gap-1 text-[#e65c00] mb-6">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-gray-300 mb-8 italic leading-relaxed">
+              "Charles K Construction completely transformed our commercial space. They stayed on budget, hit every deadline, and the finish work is spectacular. It's rare to find a contractor this dependable."
+            </p>
+            <div>
+              <p class="font-bold text-white font-slab text-lg">David M.</p>
+              <p class="text-sm text-gray-500 font-condensed uppercase tracking-wide mt-1">Commercial Renovation</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-[#1a1a1a] p-8 border border-gray-800 relative reveal" style="transition-delay: 100ms;">
+            <i data-lucide="quote" class="w-10 h-10 text-gray-800 absolute top-6 right-6"></i>
+            <div class="flex gap-1 text-[#e65c00] mb-6">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-gray-300 mb-8 italic leading-relaxed">
+              "We hired them for a massive home addition and kitchen remodel. The crew was respectful, clean, and their attention to detail is unmatched. I highly recommend them to anyone looking for premium work."
+            </p>
+            <div>
+              <p class="font-bold text-white font-slab text-lg">Sarah T.</p>
+              <p class="text-sm text-gray-500 font-condensed uppercase tracking-wide mt-1">Residential Addition</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-[#1a1a1a] p-8 border border-gray-800 relative reveal" style="transition-delay: 200ms;">
+            <i data-lucide="quote" class="w-10 h-10 text-gray-800 absolute top-6 right-6"></i>
+            <div class="flex gap-1 text-[#e65c00] mb-6">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-gray-300 mb-8 italic leading-relaxed">
+              "After dealing with flaky contractors in the past, Charles K Construction was a breath of fresh air. Honest pricing upfront, excellent communication throughout, and a beautiful final result."
+            </p>
+            <div>
+              <p class="font-bold text-white font-slab text-lg">James R.</p>
+              <p class="text-sm text-gray-500 font-condensed uppercase tracking-wide mt-1">Exterior Upgrades</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROCESS SECTION -->
+    <section id="process" class="py-24 bg-[#161616] border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="text-[#e65c00] font-bold tracking-widest uppercase text-sm mb-3 font-condensed">How We Work</h2>
+          <h3 class="text-4xl font-bold tracking-tight font-slab">A Seamless Construction Experience.</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          <!-- Connecting Line (Desktop) -->
+          <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-gray-800 z-0"></div>
+
+          <!-- Step 1 -->
+          <div class="relative z-10 text-center reveal">
+            <div class="w-24 h-24 mx-auto bg-[#111111] border-2 border-gray-800 text-gray-400 flex items-center justify-center text-3xl font-bold mb-6 transition-colors hover:border-[#e65c00] hover:text-[#e65c00] font-condensed">
+              01
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Reach Out</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Contact us with your project ideas. We'll schedule a prompt initial consultation to understand your vision.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative z-10 text-center reveal" style="transition-delay: 100ms;">
+            <div class="w-24 h-24 mx-auto bg-[#111111] border-2 border-gray-800 text-gray-400 flex items-center justify-center text-3xl font-bold mb-6 transition-colors hover:border-[#e65c00] hover:text-[#e65c00] font-condensed">
+              02
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Discuss & Plan</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">We assess the site, discuss materials, and develop a comprehensive strategy tailored to your specific needs.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative z-10 text-center reveal" style="transition-delay: 200ms;">
+            <div class="w-24 h-24 mx-auto bg-[#111111] border-2 border-gray-800 text-gray-400 flex items-center justify-center text-3xl font-bold mb-6 transition-colors hover:border-[#e65c00] hover:text-[#e65c00] font-condensed">
+              03
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Clear Quote</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">You receive a detailed, transparent estimate with clear timelines. No hidden fees, no surprises.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative z-10 text-center reveal" style="transition-delay: 300ms;">
+            <div class="w-24 h-24 mx-auto bg-[#e65c00] border-2 border-[#e65c00] text-white flex items-center justify-center text-3xl font-bold mb-6 shadow-[0_0_30px_rgba(230,92,0,0.3)] font-condensed">
+              04
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-slab">Build With Confidence</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Our expert crews execute the plan flawlessly, keeping you updated until the final walkthrough is complete.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA SECTION -->
+    <section class="py-24 relative overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop" alt="Construction blueprints" class="w-full h-full object-cover opacity-20" />
+        <div class="absolute inset-0 bg-[#e65c00]/90 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight font-slab">Ready to build something exceptional?</h2>
+        <p class="text-xl text-white/90 mb-10 text-balance">
+          Stop settling for average contractors. Partner with Charles K Construction for premium quality, reliable timelines, and stunning results.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-[#111111] bg-white hover:bg-gray-100 transition-all shadow-xl font-condensed tracking-wide uppercase">
+            Request an Estimate
+          </a>
+          <a href="tel:+15551234567" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border-2 border-white hover:bg-white/10 transition-all font-condensed tracking-wide uppercase">
+            <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+            (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-[#111111]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          
+          <!-- Contact Info -->
+          <div class="reveal">
+            <h2 class="text-[#e65c00] font-bold tracking-widest uppercase text-sm mb-3 font-condensed">Get in Touch</h2>
+            <h3 class="text-4xl font-bold tracking-tight mb-6 font-slab">Let's discuss your next project.</h3>
+            <p class="text-gray-400 mb-10 leading-relaxed max-w-md">
+              Fill out the form to request a consultation or estimate. Our team typically responds within 24 business hours to discuss your specific needs.
+            </p>
+
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 font-bold tracking-wide uppercase font-condensed mb-1">Call Us Directly</p>
+                  <p class="text-xl font-bold text-white font-slab">(555) 123-4567</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 font-bold tracking-wide uppercase font-condensed mb-1">Email Us</p>
+                  <p class="text-lg font-bold text-white font-slab">quotes@charleskconstruction.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-[#e65c00]"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 font-bold tracking-wide uppercase font-condensed mb-1">Service Area</p>
+                  <p class="text-lg font-bold text-white font-slab">Serving the Greater Metro Area & Surrounding Counties</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-[#1a1a1a] p-8 md:p-10 border border-gray-800 reveal">
+            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you for your inquiry. A representative from Charles K Construction will contact you shortly.');">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="firstName" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors" placeholder="John">
+                </div>
+                <div class="space-y-2">
+                  <label for="lastName" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors" placeholder="Doe">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="email" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">Email Address</label>
+                  <input type="email" id="email" name="email" required class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors" placeholder="john@example.com">
+                </div>
+                <div class="space-y-2">
+                  <label for="phone" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors" placeholder="(555) 123-4567">
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="service" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">Service Needed</label>
+                <select id="service" name="service" class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors appearance-none">
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="remodeling">Remodeling & Renovations</option>
+                  <option value="general">General Construction</option>
+                  <option value="interior">Interior Improvements</option>
+                  <option value="exterior">Exterior Upgrades</option>
+                  <option value="concrete">Concrete & Hardscaping</option>
+                  <option value="custom">Custom Project Build</option>
+                </select>
+              </div>
+
+              <div class="space-y-2">
+                <label for="message" class="block text-sm font-bold tracking-wide uppercase text-gray-400 font-condensed">Project Details</label>
+                <textarea id="message" name="message" rows="4" required class="w-full bg-[#111111] border border-gray-800 px-4 py-3 text-white focus:outline-none focus:border-[#e65c00] transition-colors resize-none" placeholder="Tell us about your project timeline, budget, and goals..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-[#e65c00] hover:bg-[#cc5200] text-white font-bold py-4 px-8 transition-colors flex items-center justify-center gap-2 group font-condensed tracking-wide uppercase">
+                Submit Request
+                <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="bg-[#0a0a0a] pt-16 pb-8 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <a href="#" class="flex items-center gap-2 mb-6">
+            <div class="w-8 h-8 bg-[#e65c00] flex items-center justify-center text-white font-bold tracking-tighter text-sm font-slab">CK</div>
+            <span class="font-bold tracking-tight uppercase font-slab">Charles K</span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Premium general contracting and construction services. Built with precision, delivered with pride.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest font-condensed">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#services" class="text-gray-500 hover:text-[#e65c00] transition-colors text-sm">Our Services</a></li>
+            <li><a href="#why-us" class="text-gray-500 hover:text-[#e65c00] transition-colors text-sm">Why Choose Us</a></li>
+            <li><a href="#process" class="text-gray-500 hover:text-[#e65c00] transition-colors text-sm">Our Process</a></li>
+            <li><a href="#contact" class="text-gray-500 hover:text-[#e65c00] transition-colors text-sm">Request a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest font-condensed">Services</h4>
+          <ul class="space-y-3">
+            <li class="text-gray-500 text-sm">Remodeling & Renovations</li>
+            <li class="text-gray-500 text-sm">General Construction</li>
+            <li class="text-gray-500 text-sm">Interior Improvements</li>
+            <li class="text-gray-500 text-sm">Exterior Upgrades</li>
+            <li class="text-gray-500 text-sm">Concrete & Hardscaping</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest font-condensed">Contact</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-[#e65c00] mt-0.5"></i>
+              <span class="text-gray-500 text-sm">(555) 123-4567</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-[#e65c00] mt-0.5"></i>
+              <span class="text-gray-500 text-sm">quotes@charleskconstruction.com</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="clock" class="w-4 h-4 text-[#e65c00] mt-0.5"></i>
+              <span class="text-gray-500 text-sm">Mon-Fri: 7:00 AM - 6:00 PM<br>Sat: By Appointment</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-gray-600 text-sm">
+          &copy; 2026 Charles K Construction. All rights reserved.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-600 hover:text-white transition-colors text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-600 hover:text-white transition-colors text-sm">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  
+  <!-- Custom Script -->
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
